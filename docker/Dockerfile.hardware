@@ -12,6 +12,10 @@ WORKDIR /ros2_ws
 COPY . src/husarion_ugv_ros
 
 RUN apt-get update && \
+    rm /var/lib/dpkg/info/libc-bin.* && \
+    apt-get clean && \
+    apt-get update && \
+    apt install libc-bin && \
     apt-get upgrade -y && \
     apt-get install -y \
         ros-dev-tools && \
