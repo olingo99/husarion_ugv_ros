@@ -55,12 +55,12 @@ def generate_launch_description():
 
     x = LaunchConfiguration("x")
     declare_x_arg = DeclareLaunchArgument(
-        "x", default_value="0.0", description="Initial robot position in the global 'x' axis."
+        "x", default_value="10.0", description="Initial robot position in the global 'x' axis."
     )
 
     y = LaunchConfiguration("y")
     declare_y_arg = DeclareLaunchArgument(
-        "y", default_value="-2.0", description="Initial robot position in the global 'y' axis."
+        "y", default_value="7.0", description="Initial robot position in the global 'y' axis."
     )
 
     z = LaunchConfiguration("z")
@@ -80,7 +80,7 @@ def generate_launch_description():
 
     yaw = LaunchConfiguration("yaw")
     declare_yaw_arg = DeclareLaunchArgument(
-        "yaw", default_value="0.0", description="Initial robot 'yaw' orientation."
+        "yaw", default_value="3.14", description="Initial robot 'yaw' orientation."
     )
 
     log_stats = {
