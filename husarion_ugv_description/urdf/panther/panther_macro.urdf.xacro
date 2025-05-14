@@ -62,7 +62,7 @@
       <hardware>
         <xacro:if value="${use_sim}">
           <plugin>husarion_ugv_gazebo/EStopSystem</plugin>
-          <param name="e_stop_initial_state">true</param>
+          <param name="e_stop_initial_state">false</param>
         </xacro:if>
 
         <xacro:unless value="${use_sim}">
